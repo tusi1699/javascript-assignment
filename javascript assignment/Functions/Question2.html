@@ -1,0 +1,22 @@
+<!-- What is the difference between a function declaration and a function expression? -->
+
+1. Function Declaration
+A function declaration is a statement that defines a named function. 
+It is hoisted, meaning it can be called before it appears in the code.
+
+function greet() {
+    console.log("Hello!");
+  }
+  
+  greet(); // This works because the function is hoisted.
+
+  2. Function Expression
+  A function expression defines a function and assigns it to a variable (or constant). 
+  The function is not hoisted, so it cannot be called before the expression is assigned.
+
+  const greet = function() {
+    console.log("Hello!");
+  };
+  
+  greet(); // This works only after the function expression is assigned.
+  
